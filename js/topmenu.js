@@ -15,6 +15,6 @@ $(function () {
     });
 });
 
-$(function () {
-    $("#header").load("../html/header-menu.html");
-});
+//$(function () {
+//    $("#header").load("https://harumi-tahara.github.io/html/header-menu.html");
+//});
