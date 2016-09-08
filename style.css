@@ -290,6 +290,7 @@ article {
     padding:0;
     border-radius: 16px;
     border: solid 4px #8130b4;
+    margin: 8px;
 }
 
 article > h1{
