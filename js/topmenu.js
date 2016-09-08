@@ -14,3 +14,9 @@ $(function () {
         }
     });
 });
+
+$(function(){
+$("#header").load("../html/header-menu.html");
+$("#footer").load("footer.html");
+$("#menu").load("menu.html");
+});
