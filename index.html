@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>TOP</title>
     <link rel="stylesheet" href="css/cssreset-min.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/topmenu.min.js"></script>
 </head>
 
 <body>
@@ -50,26 +52,6 @@
                     </div>
                 </div>
                 <div style="clear:both"></div>
-
-                <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-                <script>
-                    $(function () {
-                        var menuBtn = $("#menu-btn"),
-                            menuContent = $("#menu-content");
-                        menuBtn.click(function () {
-                            menuContent.slideToggle();
-                        });
-                        $(window).resize(function () {
-                            var win = $(window).width(),
-                                p = 768; //19
-                            if (win > p) {
-                                menuContent.show();
-                            } else {
-                                menuContent.hide();
-                            }
-                        });
-                    });
-                </script>
             </nav>
         </header>
         <article>
