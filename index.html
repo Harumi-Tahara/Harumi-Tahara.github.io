@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TOP</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -14,45 +15,61 @@
             <h2>index</h2>
             <!-- メニュー -->
             <nav>
-                <ul id="top-menu">
-                    <li><a href="#">自己紹介</a>
-                    <ul>
-                        <li><a href="#">真面目に</a></li>
-                        <li><a href="#">ありのまま</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="#">倉庫</a></li>
-                    <li><a href="#">メモ</a></li>
-                    <li><a href="#">趣味</a></li>
-                    <li><a href="#">資料置き場</a>
-                        <ul>
+                <div id="menu">
+                    <div id="menu-inner">
+                        <div id="btn-content">
+                            <span id="menu-btn"><i class="blogicon-reorder"></i> MENU</span>
+                        </div>
+                        <ul id="menu-content">
                             <li>
-                                <a href="#">自分用</a>
-                                <ul>
-                                    <li><a href="#">プログラム系</a></li>
-                                    <li><a href="#">企画系</a></li>
-                                    <li><a href="#">ウェブ系</a></li>
-                                    <li><a href="#">その他</a></li>
+                                <a href="#">自己紹介<i class="blogicon-chevron-down"></i></a>
+                                <ul class="second-content">
+                                    <li><a href="#">真面目に</a></li>
+                                    <li><a href="#">趣味</a></li>
+                                    <li><a href="#">ゲームプレイ履歴</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">学生共有用</a>
-                                <ul>
-                                    <li><a href="#">プログラム系</a></li>
-                                    <li><a href="#">ツール系</a></li>
-                                    <li><a href="#">その他</a></li>
+                                <a href="#">作品<i class="blogicon-chevron-down"></i></a>
+                                <ul class="second-content">
+                                    <li><a href="#">学校作品-チーム-</a></li>
+                                    <li><a href="#">学校作品-個人-</a></li>
+                                    <li><a href="#">個人作品</a></li>
+                                    <li><a href="#">同人作品-複数人-</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">外部共有用</a>
-                                <ul>
-                                    <li><a href="#">プログラム系</a></li>
-                                    <li><a href="#">その他</a></li>
+                                <a href="#">資料庫<i class="blogicon-chevron-down"></i></a>
+                                <ul class="second-content">
+                                    <li><a href="#">リンク集</a></li>
+                                    <li><a href="#">後輩へ</a></li>
                                 </ul>
                             </li>
+
                         </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+
+                <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+                <script>
+                    $(function () {
+                        var menuBtn = $("#menu-btn"),
+                            menuContent = $("#menu-content");
+                        menuBtn.click(function () {
+                            menuContent.slideToggle();
+                        });
+                        $(window).resize(function () {
+                            var win = $(window).width(),
+                                p = 768; //19
+                            if (win > p) {
+                                menuContent.show();
+                            } else {
+                                menuContent.hide();
+                            }
+                        });
+                    });
+                </script>
             </nav>
         </header>
         <article>
@@ -60,11 +77,12 @@
             <section>
                 <h1>誰が？何のために？</h1>
                 <p>ここは、とあるゲーム系専門学生がポートフォリオ公開場所＆後輩への情報共有として作成したサイトです。</p>
-            </section>
-            <section>
-                <h1>何してるの？</h1>
+                <p>自己紹介は上のメニューからどうぞ</p>
             </section>
         </article>
+        <footer>
+            <p>© 2016 Harumi Tahara</p>
+        </footer>
     </div>
 </body>
 
