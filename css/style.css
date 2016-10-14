@@ -316,18 +316,83 @@ article section > h1{
 }
 
 article section p{
-    margin: 6px 18px;
+    margin: 6px 18px 6px 24px;
 }
 
 article section >h2{
     margin: 6px 18px;
     padding-left: 8px;
     border-bottom: solid #735a83;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 article section p.h2{
     margin-left: 32px;
+}
+
+article section h3{
+    background: #464646;
+}
+
+.list-title{
+    background: #735d81;
+    font-size: 105%;
+    height:.title-logo-img {
+    } 24px;
+    color: white;
+    border-radius: 24px;
+    padding-left:12px;
+}
+
+.list{
+    margin: 0 24px;
+}
+
+.list >ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+.list > ul > li > ul{
+    margin:6px 0 0 32px;
+}
+
+.list > ul > li > ul > li{
+    list-style-type: disc;
+}
+
+a.link {
+    text-decoration: none;
+    font-size: 150%;
+    display: block;
+    background: #a31db8;
+    color: white;
+    width: 90%;
+    margin:16px auto 16px auto;
+    text-align: center;
+    padding: 1% 0;
+    border-radius: 16px;
+}
+
+a.link:hover{
+    background: #6c3775;
+}
+
+a.title-logo-img {
+    max-width: 320px;
+    min-width: 100px;
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+a.title-logo-img img{
+    width: 100%;
+}
+
+.gallery > a{
+
 }
 
 /* フッター */
