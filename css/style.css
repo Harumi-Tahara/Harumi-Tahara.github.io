@@ -320,7 +320,7 @@ article section p{
 }
 
 article section >h2{
-    margin: 6px 18px;
+    margin: 6px 12px;
     padding-left: 8px;
     border-bottom: solid #735a83;
     font-size: 110%;
@@ -383,7 +383,7 @@ a.title-logo-img {
     max-width: 320px;
     min-width: 100px;
     display: block;
-    margin: auto;
+    margin: auto 18px;
     padding: 0;
 }
 
@@ -391,10 +391,34 @@ a.title-logo-img img{
     width: 100%;
 }
 
-.gallery > a{
-
+p{
+    word-wrap: break-word;
 }
 
+.product > h1{
+    background: none;
+    margin: 6px 18px;
+}
+
+.product > ul{
+    background: none;
+    margin: 6px 18px;
+}
+
+.product > ul > li > h1{
+    background: #b414db;
+    padding: 2px 16px;
+    border-radius: 16px;
+    color: white;
+}
+
+.product > ul > li > p{
+    margin: 6px 12px;
+}
+
+.product > ul > li > details{
+    margin:  6px 18px;
+}
 /* フッター */
 footer{
     background-color: #c477f4;
