@@ -419,6 +419,11 @@ p{
 .product > ul > li > details{
     margin:  6px 18px;
 }
+
+details{
+    margin:  6px 18px;
+}
+
 /* フッター */
 footer{
     background-color: #c477f4;
